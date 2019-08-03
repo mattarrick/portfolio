@@ -1,0 +1,243 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+
+		<link
+		    rel="stylesheet"
+		    href="prism-atom-dark.css"
+		    type="text/css"
+		    media="screen"
+		  />
+
+		  <script type="text/javascript" src="prism.js"></script>
+		  <script type="text/javascript" src="prism.ruby.js"></script>
+
+		  <title>Matt Arrick</title>
+		  <meta name="description" content="Matt Arrick is a prefessional software engineer specializing in full-stack development.  He has extensive experience with Ruby, Rails, JavaScript, and building web applications.">
+
+	</head>
+
+	<body>
+		<div class="about-container">
+			<ul>
+				<li><a href="#" class="nav-link">About</li>
+				<li><a href="#code-samples" class="nav-link">Code Samples</li>
+				<li><a href="#web-apps" class="nav-link">Web Apps</li>
+				<li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</li>
+				<li class="hire-me"><a href="#hire-me" class="nav-link">Hire Me</li>
+			</ul>
+
+			<div class="about">
+				<img src="/public/me.jpg" class="me" />
+
+				<h1>Matt Arrick</h1>
+
+				<h2>SOFTWARE ENGINEER</h2>
+				<hr class="grey"/>
+				<p class="bio">
+					Matt Arrick is a self taught I.T. Professional.  He is excited to learn all there is to learn about web development and is looking forward to future employment opportunities.
+				</p>
+			</div>
+		</div>
+
+		<h3 id="code-samples">Code Snippets</h3>
+		<hr class="blue">
+
+		<div class="box">
+		  <h4>Temperature Conversion</h4>
+		  <p>
+		  	This Ruby program will prompt the user for a temperature
+		  	in degrees Celsius and let the user know what the
+		  	corresponding temperature is in Fahrenheit.
+		  </p>
+		</div>
+
+		<div class="box">
+<pre><code class="language-ruby">n = 0
+def cel2fah(n)
+    return (n * 9 / 5) + 32
+end
+
+puts &quot;Enter degrees in Celcius:&quot;
+degrees = gets.chomp
+
+puts &quot;The temperature is #{cel2fah(degrees.to_f)} degrees Fahrenheit&quot;
+</code></pre>
+		</div>
+
+		<br class="clear" />
+
+		<div class="box">
+<pre><code class="language-ruby">n = 0
+def right_digit(n)
+    n = n % 10
+end
+
+def ordinal(num)
+    if num == 11 || num == 12 || num == 13
+        return &quot;th&quot;
+    elsif right_digit(num) == 1
+        return &quot;st&quot;
+    elsif right_digit(num) == 2
+        return &quot;nd&quot;
+    elsif right_digit(num) == 3
+        return &quot;rd&quot;
+    else 
+        return &quot;th&quot;        
+    end
+end
+
+puts &quot;Enter a number&quot;
+number = gets.chomp
+number = number.to_i
+
+puts &quot;That's the #{number}#{ordinal(number)} item!&quot;
+</code></pre>
+		</div>
+
+		<div class="box">
+		  <h4>Ordinal Challenge</h4>
+		  <p>
+		  	This Ruby program will convert a plain number
+		  	to the ordinal of the number.  So for example,
+		  	if the user enters 2, it will display 2nd, if the user enters 3, it will display 3rd, etc.
+		  </p>
+		</div>
+
+		<br class="clear" />
+
+		<div class="box">
+		  <h4>Foobar</h4>
+		  <p>
+		  	This Ruby program is an adaptation of a classic technical interview problem which displays sequences of the Foobar pattern.
+		  </p>
+		</div>
+
+		<div class="box">
+<pre><code class="language-ruby">n = 0
+puts &quot;How man items do you want to see?&quot;
+number = gets.chomp
+
+foobar = []
+
+number.to_i.times do |num|
+    foobar.push(num + 1)
+end
+
+foobar.each do |num|
+    if num % 3 == 0 &amp;&amp; num % 5 == 0
+        puts &quot;Foobar&quot;
+    elsif num % 3 == 0
+        puts &quot;Foo&quot;
+    elsif num % 5 == 0
+        puts &quot;Bar&quot;
+    else
+        puts num
+    end
+end
+</code></pre>
+		</div>
+
+		<br class="clear" />
+
+		<h3 id="web-apps">Web Apps</h3>
+		<hr class="blue" />
+
+		<div class="box">
+			<h4>Quote Generator</h4>
+			<img src="splurty.png" class="full-width" />
+			<p>
+				A database-powered quote generator with a mobile-first
+				design, using the Ruby on Rails framework, HTML, and CSS.
+				Uses Git and GitHub for version control, and launched
+				on Heroku.
+			</p>
+		</div>
+
+	<div class="box">
+      <h4>Yelp Clone</h4>
+      <img src="nomster.png" class="full-width" />
+      <p>
+        A Yelp clone that integrates with the Google Maps API
+        and includes features like user comments, star ratings,
+        image uploading, and user authentication.
+      </p>
+    </div>
+    <br class="clear" />
+
+    <div class="box">
+      <h4>Two-Sided Market Place</h4>
+      <img src="flixter.png" class="full-width" />
+      <p>
+        A two-sided, video-streaming marketplace platform that
+        features credit card payment capabilities, user role
+        management, complex user interfaces, and advanced
+        database relationships.
+      </p>
+    </div>
+    <div class="box">
+      <h4>Test Driven Development</h4>
+      <img src="grammable.png" class="full-width" />
+      <p>
+        An Instagram clone that was built using industry-standard, test-driven
+        development following numerous red/green/refactor cycles.
+      </p>
+    </div>
+    <br class="clear" />
+    <div class="box">
+      <h4>Single Page Todo Application</h4>
+      <img src="todoster.png" class="full-width" />
+      <p>
+        This single-page to-do application features a
+        fluid user interface that– by using JavaScript–
+        allows users to rapidly add dynamic content.
+      </p>
+    </div>
+    <div class="box">
+      <h4>Agile Team Project</h4>
+      <img src="chess.png" class="full-width" />
+      <p>
+        Worked on an Agile software development team building
+        a chess application. Under the guidance of a senior software engineer,
+        we had weekly Agile team meetings for code reviews, sprint planning,
+        and feature assignments.
+      </p>
+    </div>
+    <br class="clear" />
+
+    <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+    <hr class="blue" />
+    <p class="skills-and-tools">
+    	Matt has developed proficiency and expertise
+    	in the following programming languages and
+    	confort with the following tools.
+    </p>
+
+    <div class="icons" />
+	    <img src="github.png" class="icon" />
+	    <img src="rubocop.png" class="icon" />
+	    <img src="trello.png" class="icon" />
+	    <img src="slack.png" class="icon" />
+	    <img src="codeship.png" class="icon" />
+
+	    <br class="clear" />
+	    <img src="skills.png" class="icon" />
+	</div>
+
+	<div class="contact-me" id="hire-me">
+		<h3 class="contact-headline">Contact</h3>
+		<hr class="blue" />
+		<p class="contact-info">
+			Currently entertaining new opportunities.  Please get in touch via email:
+		</p>
+		<p>
+			<a href="mailto:mattarrick@gmail.com" class="contact-link">
+				mattarrick@gmail.com
+			</a>
+		</p>
+    </div>
+
+	</body>
+
+</html>
