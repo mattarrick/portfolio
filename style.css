@@ -1,0 +1,153 @@
+body{
+	font-family: 'Noto Sans', sans-serif;
+	margin: 0;
+}
+
+h1 {
+	color: white;
+	font-size: 50px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+h2 {
+	color: white;
+	font-size: 18px;
+	margin-top: 0;
+}
+
+h3 {
+	text-align: center;
+	font-size: 28px;
+	font-weight: normal;
+	margin-top: 100px;
+	color: black;
+}
+
+h4 {
+	text-align: center;
+	font-size: 24px;
+}
+
+p {
+	text-align: center;
+}
+
+.bio {
+	color: white;
+	font-size: 14px;
+}
+
+.me {
+	height: 150px;
+	border-radius: 100%;
+	border-style: solid;
+	border-color: white;
+	margin-top: 40px;
+}
+
+.about {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.grey {
+	height: 3px;
+	background-color: #9B9A9A;
+	border: none;
+	width: 50px;
+}
+
+.about-container {background: url('bg.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 600px;
+}
+
+.blue {
+	height: 20px;
+	border: 0;
+	box-shadow: 0 20px 20px -20px #0A1CAB inset;
+	width: 250px;
+	border-bottom: none;
+	border-right: none;
+}
+
+.box {
+	float: left;
+	width: 42.5%;
+	margin-left: 5%;
+	margin-top: 80px;
+	color: black;
+}
+
+.clear {
+	clear: both;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.skills-and-tools {
+	max-width: 400px;
+	margin: 40px auto;
+}
+
+.icons {
+	text-align: center;
+}
+
+.icon {
+	margin: 30px;
+}
+
+.contact-me {
+	height: 350px;
+	background-color: #202020;
+	padding-top: 30px;
+}
+
+.contact-headline {
+	color: white;
+}
+
+.contact-info {
+	color: white;
+	font-size: 13px;
+	margin-top: 30px;
+}
+
+.contact-link {
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.nav-link {
+	color: white;
+	text-decoration: none;	
+}
+
+li {
+	display: inline-block;
+	font-size: 12px;
+	width: 100px;
+	font-weight: bold;
+	margin-top: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	margin-left: 30px;
+	background-color: #0A1CAB;
+	border-radius: 10%;
+}
+
+.hire-me {
+	border-style: solid;
+	border-color: white;
+}
