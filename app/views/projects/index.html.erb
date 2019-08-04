@@ -29,7 +29,7 @@
 			</ul>
 
 			<div class="about">
-				<img src="/public/me.jpg" class="me" />
+				<img src="me.jpg" class="me" />
 
 				<h1>Matt Arrick</h1>
 
@@ -54,46 +54,46 @@
 		</div>
 
 		<div class="box">
-<pre><code class="language-ruby">n = 0
-def cel2fah(n)
-    return (n * 9 / 5) + 32
-end
+      <pre><code class="language-ruby">n = 0
+      def cel2fah(n)
+          return (n * 9 / 5) + 32
+      end
 
-puts &quot;Enter degrees in Celcius:&quot;
-degrees = gets.chomp
+      puts &quot;Enter degrees in Celcius:&quot;
+      degrees = gets.chomp
 
-puts &quot;The temperature is #{cel2fah(degrees.to_f)} degrees Fahrenheit&quot;
-</code></pre>
-		</div>
+      puts &quot;The temperature is #{cel2fah(degrees.to_f)} degrees Fahrenheit&quot;
+      </code></pre>
+      		</div>
 
-		<br class="clear" />
+      		<br class="clear" />
 
-		<div class="box">
-<pre><code class="language-ruby">n = 0
-def right_digit(n)
-    n = n % 10
-end
+      		<div class="box">
+      <pre><code class="language-ruby">n = 0
+      def right_digit(n)
+          n = n % 10
+      end
 
-def ordinal(num)
-    if num == 11 || num == 12 || num == 13
-        return &quot;th&quot;
-    elsif right_digit(num) == 1
-        return &quot;st&quot;
-    elsif right_digit(num) == 2
-        return &quot;nd&quot;
-    elsif right_digit(num) == 3
-        return &quot;rd&quot;
-    else 
-        return &quot;th&quot;        
-    end
-end
+      def ordinal(num)
+          if num == 11 || num == 12 || num == 13
+              return &quot;th&quot;
+          elsif right_digit(num) == 1
+              return &quot;st&quot;
+          elsif right_digit(num) == 2
+              return &quot;nd&quot;
+          elsif right_digit(num) == 3
+              return &quot;rd&quot;
+          else 
+              return &quot;th&quot;        
+          end
+      end
 
-puts &quot;Enter a number&quot;
-number = gets.chomp
-number = number.to_i
+      puts &quot;Enter a number&quot;
+      number = gets.chomp
+      number = number.to_i
 
-puts &quot;That's the #{number}#{ordinal(number)} item!&quot;
-</code></pre>
+      puts &quot;That's the #{number}#{ordinal(number)} item!&quot;
+      </code></pre>
 		</div>
 
 		<div class="box">
@@ -115,28 +115,28 @@ puts &quot;That's the #{number}#{ordinal(number)} item!&quot;
 		</div>
 
 		<div class="box">
-<pre><code class="language-ruby">n = 0
-puts &quot;How man items do you want to see?&quot;
-number = gets.chomp
+      <pre><code class="language-ruby">n = 0
+      puts &quot;How man items do you want to see?&quot;
+      number = gets.chomp
 
-foobar = []
+      foobar = []
 
-number.to_i.times do |num|
-    foobar.push(num + 1)
-end
+      number.to_i.times do |num|
+          foobar.push(num + 1)
+      end
 
-foobar.each do |num|
-    if num % 3 == 0 &amp;&amp; num % 5 == 0
-        puts &quot;Foobar&quot;
-    elsif num % 3 == 0
-        puts &quot;Foo&quot;
-    elsif num % 5 == 0
-        puts &quot;Bar&quot;
-    else
-        puts num
-    end
-end
-</code></pre>
+      foobar.each do |num|
+          if num % 3 == 0 &amp;&amp; num % 5 == 0
+              puts &quot;Foobar&quot;
+          elsif num % 3 == 0
+              puts &quot;Foo&quot;
+          elsif num % 5 == 0
+              puts &quot;Bar&quot;
+          else
+              puts num
+          end
+      end
+      </code></pre>
 		</div>
 
 		<br class="clear" />
@@ -145,55 +145,69 @@ end
 		<hr class="blue" />
 
 		<div class="box">
-			<h4>Quote Generator</h4>
-			<img src="splurty.png" class="full-width" />
+      <h5><a href="https://splurty-matt-arrick.herokuapp.com/">Splurty</a></h5>
+			<h4>Random Quote Generator</h4>
+			<img src="splurty.jpg" class="full-width" />
 			<p>
-				A database-powered quote generator with a mobile-first
+				Splurty is a database-powered quote generator with a mobile-first
 				design, using the Ruby on Rails framework, HTML, and CSS.
 				Uses Git and GitHub for version control, and launched
-				on Heroku.
+				on Heroku. User can login and add their own favorite quotes.
+        Quotes appear randomly when the page refreshes.
 			</p>
 		</div>
 
 	<div class="box">
+      <h5><a href="https://nomster-matt-arrick.herokuapp.com/">Nomster</a></h5>
       <h4>Yelp Clone</h4>
-      <img src="nomster.png" class="full-width" />
+      <img src="nomster.jpg" class="full-width" />
       <p>
-        A Yelp clone that integrates with the Google Maps API
+        Nomster is a Yelp clone that integrates with the Google Maps API
         and includes features like user comments, star ratings,
-        image uploading, and user authentication.
+        image uploading, and user authentication.  Users can log in and
+        add their own reviews complete and images of their favorite locations
+        and also comment on others.
       </p>
     </div>
     <br class="clear" />
 
     <div class="box">
+      <h5><a href="https://flixter-matt-arrick.herokuapp.com/"/>Flixter</a></h5>
       <h4>Two-Sided Market Place</h4>
-      <img src="flixter.png" class="full-width" />
+      <img src="flixter.jpg" class="full-width" />
       <p>
-        A two-sided, video-streaming marketplace platform that
-        features credit card payment capabilities, user role
-        management, complex user interfaces, and advanced
-        database relationships.
+        Flixter is a two-sided, video-streaming marketplace platform that
+        features credit card payment capabilities, user role management, 
+        complex user interfaces, and advanced database relationships.  
+        Users can log in as an instructor or student (or both) and add or
+        view short instructional videos depending on their access.  Credit
+        card payments are made through integration with Stripe.
       </p>
     </div>
+
     <div class="box">
+      <h5><a href="https://grammable-matt-arrick.herokuapp.com/"/>Grammable</a></h5>
       <h4>Test Driven Development</h4>
-      <img src="grammable.png" class="full-width" />
+      <img src="grammable.jpg" class="full-width" />
       <p>
-        An Instagram clone that was built using industry-standard, test-driven
-        development following numerous red/green/refactor cycles.
+        Grammable is an Instagram clone that was built using industry-standard, 
+        test-driven development following numerous red/green/refactor cycles.  
+        Users log in and post their favorite images just like Instagram.
       </p>
     </div>
     <br class="clear" />
+
     <div class="box">
+      <h5><a href="https://todo-matt-arrick.herokuapp.com/"/>ToDo</a></h5>
       <h4>Single Page Todo Application</h4>
-      <img src="todoster.png" class="full-width" />
+      <img src="todo.jpg" class="full-width" />
       <p>
         This single-page to-do application features a
         fluid user interface that– by using JavaScript–
         allows users to rapidly add dynamic content.
       </p>
     </div>
+
     <div class="box">
       <h4>Agile Team Project</h4>
       <img src="chess.png" class="full-width" />
@@ -235,6 +249,23 @@ end
 			<a href="mailto:mattarrick@gmail.com" class="contact-link">
 				mattarrick@gmail.com
 			</a>
+      <div id="footer">
+        <div class="col-12 col-sm-3 social">
+          
+          <%= link_to 'http://github.com/mattarrick' do %>
+            <span class="fa fa-github-square fa-2x social-button"></span>
+          <% end %>
+          <%= link_to 'https://www.linkedin.com/in/matt-arrick-8955b8161/' do %>
+            <span class="fa fa-linkedin-square fa-2x social-button"></span>
+          <% end %>
+          <%= link_to 'http://facebook.com/mattarrick' do %>
+            <span class="fa fa-facebook-square fa-2x social-button"></span>
+          <% end %>
+          <%= link_to 'http://twitter.com/mattarrick' do %>
+            <span class="fa fa-twitter-square fa-2x social-button"></span>
+          <% end %>
+        </div>
+      </div>
 		</p>
     </div>
 
